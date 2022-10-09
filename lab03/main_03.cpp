@@ -1,6 +1,12 @@
 #include <iostream>
+#include "List.h"
 
+using namespace std;
 int main() {
-    std::cout << "Hello, Lab_03" << std::endl;
+    List list1;
+    for (int i = 0; i < 10; ++i) {
+        list1.insertFirst(i);
+        list1.print();
+    }
     return 0;
 }
