@@ -1,6 +1,9 @@
 #include <iostream>
-
+#include "Polynominal.h"
 int main() {
-    std::cout << "Hello, Lab_06" << std::endl;
+    double coef[]{1,2,1};
+    Polynomial p1(2, coef);
+    cout << p1 << endl;
+    cout << p1.evaluate(1) << endl;
     return 0;
 }
